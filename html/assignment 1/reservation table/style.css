@@ -1,0 +1,45 @@
+.container
+{
+    width: 80%;
+    margin: auto;
+    padding: 12px;
+}
+.container2
+{
+    padding: 12px;
+}
+.header
+{
+    width:100%;
+    background-color: rgb(15, 182, 15);
+    color:white;
+    font-size:x-large;
+    padding: 12px;
+    
+}
+img
+{
+    width:50px;
+}
+.left-row
+{
+    float: left;
+    width: 50%;
+
+}
+.right-row
+{
+    float: left;
+    width: 50%;
+    
+}
+label
+{
+    display: inline-block;
+}
+input[type=text],select
+{
+    padding: 12px;
+    border: 0cm;
+
+}

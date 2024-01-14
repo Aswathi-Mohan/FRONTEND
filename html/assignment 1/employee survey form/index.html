@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Employee Interests Survey Form</h1>
+            <label for="name">Enter Your Name</label>
+            <input type="text" name="txtname"><br>
+            <label for="department">Enter Your Department</label>
+            <input type="text" name="txtdepartment"><br>
+            <label for="about">Tell Us a little about Yourself</label>
+            <textarea rows="5"></textarea><br>
+            <div class="container2">
+            <p>you Excercise at home
+            <input type="radio" name="radio">Yes
+            <input type="radio" name="radio">No
+            </p>
+            <p>How do you like to read about your favourite topics? <br>
+            <input type="checkbox" name="chkbook" value="Books">Books
+            <input type="checkbox" name="chkonline" value="online resources">Online Resources
+            <input type="checkbox" name="chkphonee" value="phone">Phone Apps
+            <input type="checkbox" name="chkmagazine" value="magazine">Magazines
+            </p>
+            <p>What genre of movies do you like?
+                <select name="movie" id="movies">
+                <option value="select">--Select--</option>
+                <option value="comedy">Comedy</option>
+                <option value="Family">Family</option>
+                <option value="Action">Action</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Horror">Horror</option>
+            </select>
+            </p>
+        </div>
+        <div class="container3"><input type="button" name="btnsubmit" value="Submit Form"></div>
+            
+        </div>
+
+    </div>
+</body>
+</html>

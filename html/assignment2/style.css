@@ -1,0 +1,46 @@
+.container
+{
+background-color:green;
+padding: 20px;
+margin: auto;
+border: 3px solid;
+color: antiquewhite;
+width: 20%;
+}
+.container div:hover
+{
+   
+  /* background-color: blue; */
+}
+input[type=text]
+{
+background-color: rgb(221, 244, 221);    
+width: 90%;
+padding: 12px;
+margin-top: 2px;
+margin-bottom: 25px;
+border:none;
+display: block;
+}
+input[type=text]:focus
+{
+    border: none;
+    background-color: white;
+    color: black;
+    
+}
+input[type=button]
+{
+    
+    background-color: white;
+    color: rgb(137, 222, 137);
+    padding: 5PX;
+    margin-top: 30px;
+    margin-right: 5px;
+    border:none;
+    width: 45%;
+}
+::placeholder
+{
+    color:rgb(167, 238, 167);
+}

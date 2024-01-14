@@ -1,0 +1,61 @@
+.container
+{
+
+width: 50%;
+margin: auto;
+
+}
+label
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+p::
+{
+    color: red;
+}
+.col_left
+{
+    float: left;
+    width: 25%;
+    
+}
+.col_right
+{
+    float: left;
+    width: 75%;
+   
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+input[type=text],select,textarea
+{
+    padding: 5px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 0%;
+}
+input[type=text]:focus
+{
+border-radius: 0px;
+outline: 0cm;
+border: 1px solid white;
+background-color: rgb(232, 228, 228);
+}
+input[type=submit]
+{
+    float: right;
+    border:0px;
+    padding: 12px;
+    width: 20%;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(146, 239, 146);
+}
+input[type=submit]:hover
+{
+background-color: rgb(91, 236, 91);
+}

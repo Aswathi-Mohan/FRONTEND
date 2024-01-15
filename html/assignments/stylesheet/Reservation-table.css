@@ -2,7 +2,8 @@
 {
     width: 80%;
     margin: auto;
-    padding: 12px;
+    padding: 50px;
+    
 }
 .container2
 {
@@ -14,32 +15,66 @@
     background-color: rgb(15, 182, 15);
     color:white;
     font-size:x-large;
-    padding: 12px;
+    padding: 15px;
     
+}
+.container2{
+    width:100%;
+    background-color: rgb(239, 235, 235);
+    color:black;
+    padding: 15px;
+
+}
+.flex-container
+{
+    width: 90%;
+    display: flex;
+    background-color: rgb(239, 235, 235);
+    padding: 0px;
+    margin-top: 20PX;
+    
+}
+.flex-container > div
+{
+width: 50%;
+
+}
+.flex-container input[type=text]
+{
+    width:100%;
+}
+.flex-container input[type=date]
+{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid rgb(222, 221, 221);
+}
+.flex-container select
+{
+    width: 90%;
+}
+p{
+    color: rgb(51, 156, 51);
+    text-align: center;
+    padding: 20PX;
 }
 img
 {
     width:50px;
 }
-.left-row
-{
-    float: left;
-    width: 50%;
 
-}
-.right-row
-{
-    float: left;
-    width: 50%;
-    
-}
 label
 {
-    display: inline-block;
+    display:block;
+    font-size: 15PX;
+    margin-top: 5px;
+
 }
 input[type=text],select
 {
     padding: 12px;
-    border: 0cm;
+    margin-top: 5PX;
+    border: 1px solid rgb(222, 221, 221);
+    width: 100%;
 
 }

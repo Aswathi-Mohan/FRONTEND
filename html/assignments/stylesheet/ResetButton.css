@@ -1,0 +1,56 @@
+.container
+{
+   width: 60%;
+   box-sizing: border-box;
+   margin: auto;
+   border: 1px solid grey;
+}
+.container2
+{
+    background-color: rgb(163, 163, 195); 
+    color: black;
+    padding: 5px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.floatleft
+{
+    float: left;
+    width: 30%;
+}
+.floatright
+{
+    float: left;
+    width: 70%;
+}
+label
+{
+    color: black;
+    padding: 12px;
+
+}
+input[type=text]
+{
+    padding: 12px;
+    width: 80%;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+input[type=date]
+{
+    padding: 12px;
+    width: 80%;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+input[type=submit]
+{
+    padding: 10px;
+    
+}
+input[type=reset]
+{
+    padding: 10px;
+    margin: 5px;
+}

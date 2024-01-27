@@ -1,0 +1,401 @@
+*
+{
+    box-sizing: border-box;
+}
+.container
+{
+    background-color: white;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    align-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 60%;
+    margin-left: 20%;
+}
+.container a
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 18px;
+    padding: 12px;
+}
+.icon
+{
+max-width:5%;
+/* border: 1px solid green; */
+    
+}
+.container > div
+{
+/* border: 1px solid red; */
+padding: 12px;
+width: fit-content;
+}
+.container input[type=button]
+{
+    background-color: rgb(77, 237, 237);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 12px;
+}
+.container2 img
+{
+    width: 100%;
+    opacity:0.5;
+
+}
+.container2
+{
+    position: relative;
+    /* height: 50px; */
+    /* border: 1px solid red; */
+}
+.container2 > div
+{
+    position: absolute;
+    top:20%;
+}
+.container2 p{
+
+    font-size:30PX;
+    color: white;
+    padding-left: 5%;
+}
+.container2 h1{
+   
+    font-size:80PX;
+    color: white;
+    padding-left: 5%;
+} 
+.container2 input[type=button]
+{
+   
+    background-color: rgb(77, 237, 237);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 12px;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: larger;
+} 
+.flexContent
+{
+    position: relative;
+}
+.content{
+    width: 100%;
+    height: fit-content;
+}
+.content img
+{
+width: 100%;
+height: 950px;
+opacity: 0.1;
+
+}
+.specialities
+{
+display: flex;
+justify-content:space-evenly;
+justify-items:center;
+flex-wrap: wrap;
+margin-left:10%;
+position: absolute;
+top:20%;
+flex-direction: row;
+}
+.specialities h3
+{
+text-align: left;
+color: rgb(73, 73, 73);
+font-size:20px;
+}
+.specialities img{
+    
+width:60%;
+height: 50%;
+border: none;
+border-radius: 20px;
+
+
+}
+.specialities div{
+    width:30%;
+    /* height: 60%; */
+
+}
+.content2
+{
+    /* margin: auto; */
+    /* width: 100%; */
+    background-color: rgb(101, 213, 213);
+    position: relative;
+    
+}
+.content2 img
+{
+    width: 100%;
+    opacity: 0.2;
+}
+.processing
+{
+    position: absolute;
+    top: 10%;
+    width: 60%;
+    margin-left: 20%;
+
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+    padding: 5%;
+}
+.processing h1{
+    font-size: 50px;
+    color: white;
+}
+.processing p{
+    font-size: 20px;
+    color: white;
+}
+.processing input[type=button]
+{
+    border:2px solid white;
+    background-color:transparent;
+    border-radius: 25PX;
+    padding: 15PX;
+    color: white;
+    margin-top: 5%;
+    font-size: 20PX;
+}
+.creations
+{
+    margin-top: 5%;
+    text-align: center;
+}
+.creations h1{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.422);
+}
+.creationsImages 
+{
+    display: flex;
+    justify-content:space-evenly;
+    
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+.creationsImages > img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.Receipes
+{
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.receipeDetails
+{
+position: absolute;
+top: 10%;
+margin: auto;
+text-align: center;
+color: rgba(0, 0, 0, 0.695);
+}
+.receipeDetails h1{
+font-size: 50px;
+padding-bottom: 25px;
+}
+.receipeDetails p{
+    font-size: 20px;
+    padding-bottom: 0px;    
+    line-height: 30px;
+    }
+    .Clients
+    {
+        position: relative;
+        background-color: rgb(244, 88, 114);
+        display: flex;
+        justify-content: center;
+        border: 2px solid green;
+        
+        
+        
+    }
+    .clientSay
+    {
+        position: absolute;
+        top: 10%;
+        /* background-color: pink; */
+        width: 70%;
+        /* border: 1px solid green; */
+        /* margin-left: 10%; */
+        
+    }
+.reviews
+{
+    display: flex;
+     justify-content:space-evenly; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+.reviews img{
+    width: 50px;
+    border-radius:50%;
+}
+.reviews div:nth-child(odd)
+{
+    width: 5%;
+    margin-right: 20PX;
+    margin-bottom: 150px;
+}
+.reviews div:nth-child(even)
+{
+    width:40%;
+    margin-right: 20PX;
+}
+.reviews p{
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+}
+.reviews h3{
+    font-weight: bold;
+    color: white;
+
+}
+.clientSay h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.special-cakes
+{
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+}
+.special-cakes h1{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.625);
+    margin-top: 50px;
+}
+ 
+  th, td {
+   
+    border-bottom: 1px solid #DDD;
+  }
+table td
+{
+    padding: 30px;
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.992);
+    
+}
+table th{
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.499);
+    text-align: left;
+}
+.question
+{
+    background-color: rgba(128, 128, 128, 0.363);
+    height:fit-content;
+    width:20%;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.question p{
+    color: rgb(60, 147, 147);
+    font-size: 20px;
+    padding: 10px;
+}
+.news
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.subscrribe
+{
+position: absolute;
+top: 5%;
+padding: 30px;
+}
+.subscrribe h1{
+    color: white;
+    font-size: 50px;
+}
+.subscrribe input[type=text]
+{
+    border-radius: 25px;
+    padding: 15px;
+    border: 2px solid rgb(195, 192, 192);
+    background-color: transparent;
+    width:60%;
+}
+
+.subscrribe input[type=button]
+{
+    border-radius: 25px;
+    padding: 15px;
+    border:none;
+    background-color: rgb(102, 230, 230);
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+.subscrribe p{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.subscrribe img{
+    width: 50px;
+    border: 3px solid grey;
+    border-radius: 50%;
+    padding: 10px;
+}
+.footer
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    
+}
+.footerLinks
+{
+    display: flex;
+    margin-top: 20px;
+}
+.footerLinks a
+{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}

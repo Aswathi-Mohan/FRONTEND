@@ -1,0 +1,212 @@
+.navbar-toggler-border
+{
+    border: none;
+    font-size: 1.25em;
+}
+.navbar-toggler-border:focus, .btn-close:focus
+{
+box-shadow: none;
+outline: none;
+
+}
+.nav-link
+{
+    color: rgba(234, 232, 232, 0.604);
+    font-weight: 600;
+    position: relative;
+    font-size: 20px;
+}
+.nav-link:hover,nav-link:active
+{
+    color:black !important;
+}
+@media  (min-width: 991px) {
+        .nav-link::before
+        {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width:0;
+            height: 2px;
+            background-color: blue;
+            visibility: hidden;
+            transition: 0.3s ease-in-out;
+        }
+        .nav-link:hover::before
+        {
+            width: 80%;
+            visibility: visible;
+        }
+}
+.image-bg
+{
+    background: url(../images/office.jpg);
+    background-size: cover;
+    width: 100%;
+    height:max-content;
+    opacity: 0.7;
+}
+.content-big
+{
+    font-size: 40px;
+    text-align: center;
+    width: auto ;
+    color: white;
+    margin-top:60%;
+}
+.btn-get-them
+{
+    border-radius:0;
+    color: white;
+    text-align: center;
+}
+.btn-margin
+{
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+.img-card
+{
+    width: 140px;
+    height: 150px;
+}
+
+.featurehead{
+    width: 500px;
+    height: 100px;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 50px;
+    
+}
+
+.featurehead::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+    left: 38%;
+    border-bottom: 3px solid rgb(42, 73, 228);
+}
+.tick
+{
+    font-size: 20px;
+    font-weight:bolder;
+    color: blue;
+    padding: 5px;
+    padding-right: 20px;
+    text-align: left;
+    
+
+}
+.card-head
+{
+    font-size: 50px;
+    color: rgb(59, 59, 191);
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.card-txt
+{
+    font-style: italic;
+    padding-bottom: 20px;
+
+}
+#card-hover:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card:hover button[type=button]
+{
+    background-color:dodgerblue;
+    border: none;
+    border-radius: 0;
+    
+}
+
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.review-count{
+    font-weight:400;
+    margin-bottom:2px;
+    font-size:24px !important;
+}
+
+.small-ratings i{
+  color:#cecece;   
+}
+
+.review-stat{
+    font-weight:300;
+    font-size:18px;
+    margin-bottom:2px;
+}
+#frm input[type=text],input[type=email],button[type=button]
+{
+    border-radius: 0;
+    padding: 10px;
+    
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: grey;
+    opacity: 1; /* Firefox */
+}
+form
+{
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: aquamarine;
+
+}
+.fa {
+    padding: 2px;
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 25px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+.fixed
+   {
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    
+  }
+.fixed:hover
+  {
+cursor: pointer;
+
+  }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+    <div class="h1 text-primary" id="Name">
+    </div>
+    <div>
+        <h3 class="h3 py-4">Tell me Something about Yourself:</h3>
+        <textarea class="form-control" rows="10" id="About"></textarea>
+        <button class="btn btn-primary px-4" onclick="removeDuplicate(About.value)">Remove Duplicates   </button>
+        <button class="btn btn-primary px-4" onclick="checkPalindrom(About.value)">Check palindrome   </button>
+        <button class="btn btn-primary px-4" onclick="findLongestWord(About.value)">Check Longest word   </button>
+        <button class="btn btn-primary px-4" onclick="reverseString(About.value)">Reverse String   </button>
+
+    </div>
+</div>
+    <script>
+        // let updatedname =new Array();
+        let UserName = prompt("Enter your Name")
+        let capUser = UserName.split(" ")
+        for(let i=0; i<capUser.length;i++)
+        {
+            capUser[i]=capUser[i][0].toUpperCase()+ capUser[i].substr(1);
+            // capitalizeUser[i]=capitalizeUser[i][0].toUpperCase()
+            // updatedname.push()
+        }
+        console.log(capUser)
+        let aa = capUser.join(" ");
+        
+        // let userlength = UserName.length()
+
+        document.getElementById("Name").innerHTML = (`Hi ${aa} welcome!!!!`);
+        // document.getElementById("Name").innerHTML = (`length of your name is ${userlength}`);
+
+        function removeDuplicate(str)
+        {
+            var uniq=" "
+            for(const chr of str)
+            {
+                if(uniq.includes(chr) == false)
+                {
+                 uniq += chr;
+                }
+            }
+        window.alert(`All duplicates are removed .Unique value is : ${uniq} `)
+        }
+//find the longest word in s string
+        function findLongestWord(str) 
+        {
+            // debugger;
+            // console.log(str)
+            let strSplit = str.split(' ');
+            let word="";
+            // window.alert(strSplit[0])
+            var longestWord = 0;
+            for(let i = 0; i < strSplit.length; i++)
+            {
+                if(strSplit[i].length > longestWord)
+                      { 
+	                        longestWord = strSplit[i].length; 
+                            word = strSplit[i]
+                     }
+             
+           }
+          //window.alert(longestWord)
+          window.alert(word)
+        
+         }
+//Reverse a String
+
+         function reverseString(str)
+          {
+            
+            var splitString = str.split("");  
+            var reverseArray = splitString.reverse(); 
+            var joinArray = reverseArray.join("");
+            
+            window.alert(joinArray)
+}
+
+//check palinfrome
+
+function checkPalindrom(str)
+          {
+            
+            var splitString = str.split(" ");  
+            var reverseString = "";
+            let getString="";
+            let palindrome="";
+            
+            for(let i=0;i<splitString.length;i++)
+            {
+                getWord=splitString[i];
+                getString=splitString[i].split("");
+                var reverseArray = getString.reverse();
+                var joinArray = reverseArray.join("");
+                
+                if(getWord==joinArray)
+                {
+                    palindrome+=getWord + ",";
+                    
+                }             
+            }
+            alert(palindrome)
+}
+    </script>
+</body>
+</html>

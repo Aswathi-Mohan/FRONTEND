@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="../DNK/IMAGES/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <!-- <link rel="javascript" href="../DNK/JAVASCRIPT/dsk.js"/> -->
+  <link rel="stylesheet" href="../DNK/CSS/style.css">
+  
+</head>
+
+<!-- <body onclick="printid(this.id);"> -->
+  <body>
+  <div class="container-fluid p-0" id="navWhite">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0, 0, 0.07);">
+      <a href="../DNK/index.html"><img class="p-5" src="../DNK/IMAGES/logo1.png"/></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="../DNK/Store.html">EVERYTHING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WOMEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ACCESORIES</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../DNK/about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../DNK/contact-Us.html">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >$<span id="cart-total">0</span>.00</a>
+                    <!-- off canvas     -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header border-bottom">
+                <h5 id="offcanvasRightLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" id="offcanvasCartList">
+              
+              </div>
+              <button class="btn btn-primary mb-3 mx-2 rounded-0 p-2 fw-bold text-uppercase">View Cart</button>
+              <button class="btn btn-primary mb-3 mx-2 rounded-0 p-2 fw-bold text-uppercase">Checkout</button>
+            </div>
+            <!-- off canvas ends     -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa fa-shopping-bag position-relative" style="font-size:20px;color:white">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-white text-dark mx-2" id="item-count">0</span></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class='fas fa-user-alt' style='font-size:24px;color:green'></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- nav Ends here -->
+  <!-- section starts here -->
+
+  <section class="section-header" style="background-color: hsla(217, 89%, 51%, 0.5);">
+    <div class="section-div">
+      <h2>Raining Offers For Hot Summer!</h2>
+      <p class="py-4">25% Off On All Products</p>
+      <a class="btn btn-lg m-2 rounded-0 border-2 py-2 btn-shop">SHOP NOW</a>
+      <a class="btn btn-outline-light btn-lg m-2 rounded-0 border-3 py-2 btn-find">FIND MORE</a>
+      <!-- <button class="btn btn-find">FIND MORE</button> -->
+    </div>
+
+  </section>
+
+  <!-- slider section begins -->
+  <div class="container d-flex flex-wrap justify-content-center p-5">
+
+    <img class="p-5" src="../DNK/IMAGES/client-logo-1.png" />
+    <img class="p-5" src="../DNK/IMAGES/client-logo-2.png" />
+    <img class="p-5" src="../DNK/IMAGES/client-logo-3.png" />
+    <img class="p-5" src="../DNK/IMAGES/client-logo-4.png" />
+    <img class="p-5" src="../DNK/IMAGES/client-logo-2.png" />
+
+  </div>
+  <!-- slider section ends -->
+  <!-- card section begins -->
+  <div class="container w-75">
+    <div class="w-100" id="card">
+    </div>
+  </div>
+
+  <!-- card section ends -->
+  <!-- products section begins -->
+  <div class="container-fluid bg-light p-5">
+    <div class="p-5">
+      <h1 class="h1 text-center my-5">Featured Products</h1>
+    </div>
+
+    <!-- ------------------------------------------------------------- -->
+
+
+<div class="container" id="products">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------------------------- -->
+    <!-- <div class="container my-5"> 
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card border-0 bg-light " id="card1">
+          
+          <img src="../DNK/IMAGES/product1.jpg" class="position-relative cursor-pointer" id="imgpic"/>
+          <p class="position-absolute rounded-pill bg-white shadow p-1 my-3 mx-3 top-left">sale!  </p>
+          <a id="ggg" class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)" data-toggle="tooltip" data-placement="left" title="Hooray!"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+          <div class="card-body">
+            <h5 class="card-title" id="card-title-1">DNK Yellow Shoes</h5>
+            <p class="card-text">Men</p>
+            <p class="card-text">$<span id="itemprice">120</span>.00</p>
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>      
+      </div>
+
+
+      <div class="col">
+        <div class="card border-0 bg-light">
+          <img src="../DNK/IMAGES/product2.jpg" id="productImage" class="cursor-pointer position-relative"/>
+          <a class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+
+          <div class="card-body">
+            <h5 class="card-title">DNK Blue Shoes</h5>
+            <p class="card-text">Men</p>
+            <span class="dot me-2 cursor-pointer" tooltip="blue" style="background-color:#1e73be;"  onclick="document.getElementById('productImage').src='../DNK/IMAGES/product2blue.jpg' "></span>
+            <span class="dot me-2 cursor-pointer" style="background-color:#81d742;"  onclick="document.getElementById('productImage').src='../DNK/IMAGES/product2green.jpg' "></span>
+            <span class="dot me-2 cursor-pointer" style="background-color:#ce592f;"  onclick="document.getElementById('productImage').src='../DNK/IMAGES/product2red.jpg' "></span>
+            <p class="card-text">$<span id="itemprice2">200</span>.00 – $240.00</p>
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0 bg-light">
+          <img src="../DNK/IMAGES/product3.jpg" class="cursor-pointer position-relative"/>
+          <a class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+
+          <div class="card-body">
+            <h5 class="card-title">Dark Brown Jeans</h5>
+            <p class="card-text">Men</p>
+            <p class="card-text">$<span id="itemprice3">120</span>.00</p>
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0 bg-light">
+          <img src="../DNK/IMAGES/product4.jpg" class="cursor-pointer position-relative"/>
+          <a class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+
+          <div class="card-body">
+            <h5 class="card-title">Blue Denim Jeans</h5>
+            <p class="card-text">Men</p>
+            <p class="card-text">$<span id="itemprice4">120</span>.00</p>
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0 bg-light">
+          <img src="../DNK/IMAGES/product5.jpg" class="cursor-pointer position-relative"/>
+          <a class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+
+          <div class="card-body">
+            <h5 class="card-title">Basic Grey Jeans</h5>
+            <p class="card-text">Men</p>
+            <p class="card-text">$<span id="itemprice5">120</span>.00</p>
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card border-0 bg-light ">
+          <img src="../DNK/IMAGES/product6.jpg" class="position-relative cursor-pointer"/>
+          <p class="position-absolute rounded-pill bg-white shadow p-1 my-3 mx-3">sale!  </p>
+          <a class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+
+          <div class="card-body">
+            <h5 class="card-title">Blue Denim Shorts</h5>
+            <p class="card-text">Men</p>
+            <p class="card-text">$<span id="itemprice6">120</span>.00</p>
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>      
+      </div>
+
+      <div class="col">
+        <div class="card border-0 bg-light">
+          <img src="../DNK/IMAGES/product7.jpg" id="productImage7" class="cursor-pointer position-relative"/>
+          <a class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+
+          <div class="card-body">
+            <h5 class="card-title">Anchor Bracelet</h5>
+            <p class="card-text">Men</p>
+            <p class="card-text">$<span id="itemprice7">120</span>.00</p>
+            <span class="dot me-2 cursor-pointer" tooltip="blue" style="background-color:black;"  onclick="document.getElementById('productImage7').src='../DNK/IMAGES/product7.jpg' "></span>
+            <span class="dot me-2 cursor-pointer" style="background-color:#aa7627;"  onclick="document.getElementById('productImage7').src='../DNK/IMAGES/product7brown.jpg' "></span>
+            <span class="dot me-2 cursor-pointer" style="background-color:#ce592f;"  onclick="document.getElementById('productImage7').src='../DNK/IMAGES/product7red.jpg' "></span>
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0 bg-light">
+          <img src="../DNK/IMAGES/product8.jpg" id="productImage8" class="cursor-pointer position-relative"/>
+          <a class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+
+          <div class="card-body">
+            <h5 class="card-title">Boho Bangle Bracelet</h5>
+            <p class="card-text">Men</p>
+            <p class="card-text">$<span id="itemprice8">120.00</span></p>
+            <span class="dot me-2 cursor-pointer" tooltip="blue" style="background-color:#1fb1c1;"  onclick="document.getElementById('productImage8').src='../DNK/IMAGES/product8.jpg' "></span>
+            <span class="dot me-2 cursor-pointer" style="background-color:#81d742;"  onclick="document.getElementById('productImage8').src='../DNK/IMAGES/product8green.jpg' "></span>
+            <span class="dot me-2 cursor-pointer" style="background-color:#ce592f;"  onclick="document.getElementById('productImage8').src='../DNK/IMAGES/product8red.jpg' "></span>
+
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0 bg-light">
+          <img src="../DNK/IMAGES/product9.jpg" class="cursor-pointer position-relative"/>
+          <a class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+
+          <div class="card-body">
+            <h5 class="card-title">Light Brown Purse</h5>
+            <p class="card-text">Men</p>
+            <p class="card-text">$<span id="itemprice9">120</span>.00</p>
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-0 bg-light ">
+          <img src="../DNK/IMAGES/product10.jpg" class="cursor-pointer position-relative"/>
+          <a class="position-absolute rounded-circle bg-white shadow p-1 top-right my-2" onclick="addCart(this)"><i class="fa fa-shopping-bag" style="font-size:20px;color:black"></i></a>
+
+          <div class="card-body">
+            <h5 class="card-title">Bright Red Bag</h5>
+            <p class="card-text">Men</p>
+            <p class="card-text">$<span id="itemprice10">120</span>.00</p>
+            <p class="card-text">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> -->
+</div>
+  <!-- products section ends -->
+
+  
+
+  <!-- special Edition starts -->
+  <div class="container-fluid bg-light text-white p-5">
+    <div class="container special-edition specialEdition-bg">
+      <div class="p-5 w-50">
+        <p class="fw-bold">Limited Time Offer</p>
+        <h1 class="h1">Special Edition</h1>
+        <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <h5 class="pb-4">Buy This T-shirt At 20% Discount, Use Code OFF20</h5>
+        <button class="btn rounded-0 border-2 py-2 btn-shop w-25"> Shop Now</button>
+      </div> 
+    </div>
+    <div class="container d-flex flex-row text-dark my-5 align-items-center justify-content-center padding text-center" style="gap: 10px">
+      <div>
+        <img src="../DNK/IMAGES/globe-free-img.png"/>
+        <p class="fs-5 fw-bold">Worldwide Shipping</p>
+        <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+      <div>
+        <img src="../DNK/IMAGES/quality-free-img.png"/>
+        <p class="fs-5 fw-bold">Worldwide Shipping</p>
+        <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+      <div>
+        <img src="../DNK/IMAGES/tag-free-img.png"/>
+        <p class="fs-5 fw-bold">Worldwide Shipping</p>
+        <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+      <div>
+        <img src="../DNK/IMAGES/lock-free-img.png"/>
+        <p class="fs-5 fw-bold">Worldwide Shipping</p>
+        <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+
+    </div>
+
+  </div>
+   <!-- special Edition ends -->
+
+  <!-- Footer section starts -->
+  <div class="container-fluid">
+<footer class="text-center text-lg-start text-muted">
+  
+  <section class="p-5 border-bottom">
+      <div class="mx-auto container">
+      <h1 class="h4 text-dark ms-4">SALE UP TO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS.</h4>
+    </div>
+    
+
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="border-bottom">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <img src="../DNK/IMAGES/logo2.png"/>
+          <h5 class="py-5 text-dark">The best look anytime, anywhere. </h5>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h5 class="text-dark mb-4">
+            For Her
+          </h5>
+          <p>
+          
+          <a href="#!" class="text-reset text-decoration-none">Women Jeans</a></p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Tops and Shirts</a>
+          </p>  
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Women Jackets</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Heels and Flats</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Women Accessories</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h5 class="text-dark mb-4">
+            For him
+          </h5>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Men Jeans</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Men Shirts</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Men Shoes</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Men Accessories</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h5 class="text-dark mb-4">
+            Subscribe
+          </h5>
+          
+
+          <div class="col-md-8 col-12">
+            <!-- Email input -->
+            <div class="mb-4">
+              <input type="email" id="formemail" class="form-control rounded-0 p-2" placeholder="Your Email address"/>
+              
+            </div>
+          </div>
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary rounded-0 border-2 py-2">
+              <h2 class="h5 px-3 text-center">Subscribe</h5>     
+            </button>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="container d-flex w-100" id="footerpart">
+  <div class="p-4 bg-white d-flex text-dark w-75">
+    Copyright © 2024 Brandstore. Powered by Brandstore.     
+</div>
+<div>
+    <span>
+      <div class="p-4 justify-content-end">
+        <a href="" class="me-4 text-dark text-decoration-none">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="" class="me-4 text-dark text-decoration-none">
+          <i class="fa fa-youtube"></i>
+        </a>
+        <a href="" class="me-4 text-dark text-decoration-none">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-dark text-decoration-none">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-dark text-decoration-none">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-dark text-decoration-none">
+          <i class="fa fa-google"></i>
+        </a>
+        
+      </div>
+      </span> 
+  
+</div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+  </div>
+
+
+  <!-- Footer section ends -->
+
+
+
+  <!-- customoze section starts -->
+  <button class="btn btn-primary button-fixed" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight">
+    <i class='fas fa-palette' style='font-size:8px;color:blue'></i>customize
+
+                       <!-- off canvas     -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header border-bottom">
+                <h5 id="offcanvasRightLabel">Brandstore</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+               <p> Use the template as-is or try different colors and fonts from the options below.</p>
+
+                <!-- <p class="display-4 d-inline">Try Other Colors</p>
+                
+                <p class="d-inline">Default</p> -->
+              </div>
+              <!-- <button class="btn btn-primary mb-3 mx-2 rounded-0 p-2 fw-bold text-uppercase">View Cart</button>
+              <button class="btn btn-primary mb-3 mx-2 rounded-0 p-2 fw-bold text-uppercase">Checkout</button> -->
+            </div>
+  </button>
+<!-- customoze section ends -->
+  
+<p id="demo">jhh</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="../DNK/JAVASCRIPT/dsk.js"></script>
+  
+</body>
+
+</html>

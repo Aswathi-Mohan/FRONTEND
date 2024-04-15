@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+        <div class="p-5">
+        <button class="btn btn-primary p-4" onclick="increment()"> + </button>
+        <span class="px-5" id="result" style="font-size: 40px;">0</span>
+        <button class="btn btn-primary p-4" onclick="decrement()"> - </button>
+    </div>
+    </center>
+    <script>
+        let count = 0;
+        let displayValue = document.getElementById("result")
+        function increment() {
+            count++;
+            displayValue.innerText = count;
+        }
+        function decrement() {
+            count--;
+            displayValue.innerText = count;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    th{
+        color:dodgerblue;
+    }
+</style>
+<body>
+    <h2 class="h2 py-3 text-center">Employee Details</h2>
+    <table class="table table-dark table-striped table-hover">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>CITY</th>
+            <th>SALARY</th>
+        </tr>
+        <tbody id="employeeTable">
+
+        </tbody>
+    </table>
+    <script>
+        const data = [
+            {id:101, name:'kushal', city:'bangalore', salary:'10000'},
+            {id:102, name:'ramesh', city:'chennai', salary:'20000'},
+            {id:103, name:'praveen', city:'hyderabad', salary:'30000'},
+            {id:104, name:'ramya', city:'pune', salary:'40000'},
+            {id:105, name:'satvik', city:'kolkata', salary:'50000'},
+        ]
+
+        let table=document.getElementById('employeeTable');
+        for(let i=0;i<=data.length;i++)
+        {
+            let row=`<tr>
+                        <td>${data[i].id}</td>
+                        <td>${data[i].name}</td>
+                        <td>${data[i].city}</td>
+                        <td>${data[i].salary}</td>
+                    </tr>`
+                    table.innerHTML+=row;
+
+        }
+
+    </script>
+</body>
+</html>

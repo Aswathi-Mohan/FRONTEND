@@ -1,0 +1,25 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background:#8c52ff;
+}
+.search
+{
+    width: 75%;
+    border: 2px solid green;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-title
+{
+    
+    color: white;
+    font-size: 40px;
+}
